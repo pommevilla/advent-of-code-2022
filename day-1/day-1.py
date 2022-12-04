@@ -61,9 +61,6 @@ def approach_1(elves_file: str, n: int) -> List[int]:
     calories_array.sort(reverse=True)
     return calories_array[:n]
 
-# time_elapsed = timeit.timeit('approach_1(input_file, n)', number = 10000, globals=globals())
-# print(f'Average time for approach 1 over 10000 trials: {time_elapsed:.4f}')
-
 highest_n = approach_1(input_file, n)
 print(f'Highest three calories from approach 1: {highest_n}')
 print(f'Sum of highest three calories from approach 1: {sum(highest_n)}')
