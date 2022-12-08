@@ -63,7 +63,6 @@ def main():
         elif args.mode == "p2":
             directory_size_deleted = part_two(directory_sizes)
             print(f"Size of deleted directory: {directory_size_deleted}")
-
     else:
         print("unknown argument")
 
